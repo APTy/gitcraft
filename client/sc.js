@@ -1,6 +1,6 @@
 // sc.js
 
-var socket = io('http://fu.ngrok.com');
+var socket = io('http://gitcraft.herokuapp.com');
 socket.on('pull', function (data) {
   playRandom();
 });

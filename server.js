@@ -4,7 +4,8 @@ var fs = require('fs');
 var createHandler = require('github-webhook-handler');
 var handler = createHandler({ path: '/webhook', secret: 'oath' });
 
-app.listen(3420);
+var port = process.env.PORT || 3420;
+app.listen(port);
 
 function handler (req, res) {
   handler(req, res, function (err) {
